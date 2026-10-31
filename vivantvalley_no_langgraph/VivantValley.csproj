@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>VivantValley</AssemblyName>
+    <RootNamespace>VivantValley</RootNamespace>
+    <Version>0.23.4</Version>
+    <DebugType>portable</DebugType>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <GamePath Condition="'$(GamePath)' == ''">E:\SteamLibrary\steamapps\common\Stardew Valley</GamePath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="assets\social\town-echo-contacts.json" LogicalName="VivantValley.TownEchoContacts.json" />
+    <EmbeddedResource Include="assets\prompts\zh\*.txt"><LogicalName>VivantValley.Prompts.zh.%(Filename)%(Extension)</LogicalName></EmbeddedResource>
+    <EmbeddedResource Include="assets\prompts\en\*.txt"><LogicalName>VivantValley.Prompts.en.%(Filename)%(Extension)</LogicalName></EmbeddedResource>
+    <EmbeddedResource Include="i18n\*.json"><LogicalName>VivantValley.I18n.%(Filename)%(Extension)</LogicalName></EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="StardewModdingAPI" HintPath="$(GamePath)\StardewModdingAPI.dll" Private="false" />
+    <Reference Include="Stardew Valley" HintPath="$(GamePath)\Stardew Valley.dll" Private="false" />
+    <Reference Include="StardewValley.GameData" HintPath="$(GamePath)\StardewValley.GameData.dll" Private="false" />
+    <Reference Include="MonoGame.Framework" HintPath="$(GamePath)\MonoGame.Framework.dll" Private="false" />
+    <Reference Include="SkiaSharp" HintPath="$(GamePath)\SkiaSharp.dll" Private="false" />
+    <Reference Include="xTile" HintPath="$(GamePath)\xTile.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(GamePath)\smapi-internal\0Harmony.dll" Private="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="tests\**\*.cs" />
+    <None Update="manifest.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="i18n\**\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="assets\dreams\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="assets\social\**\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="assets\share\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="assets\stories\**\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="assets\prompts\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="assets\prompts\*.txt;assets\prompts\*.json">
+      <LogicalName>VivantValley.Prompts.%(Filename)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

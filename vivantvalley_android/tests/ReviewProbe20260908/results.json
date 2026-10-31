@@ -1,0 +1,274 @@
+[
+  {
+    "name": "baseline",
+    "accepted": true,
+    "failure": "",
+    "beats": [
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "谢谢你来。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "我一直在考虑这件事。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "你想留下还是先回去？",
+        "choices": 0
+      },
+      {
+        "Type": "choice",
+        "Actor": "Alex",
+        "Text": "",
+        "choices": 2
+      },
+      {
+        "Type": "end",
+        "Actor": "",
+        "Text": "",
+        "choices": 0
+      }
+    ],
+    "summary": "Alex邀玩家在海边聊天。"
+  },
+  {
+    "name": "end_before_any_dialogue",
+    "accepted": true,
+    "failure": "",
+    "beats": [
+      {
+        "Type": "end",
+        "Actor": "",
+        "Text": "",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "谢谢你来。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "我一直在考虑这件事。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "你想留下还是先回去？",
+        "choices": 0
+      },
+      {
+        "Type": "choice",
+        "Actor": "Alex",
+        "Text": "",
+        "choices": 2
+      },
+      {
+        "Type": "end",
+        "Actor": "",
+        "Text": "",
+        "choices": 0
+      }
+    ],
+    "summary": "Alex邀玩家在海边聊天。"
+  },
+  {
+    "name": "player_key_disclosure_silently_dropped",
+    "accepted": true,
+    "failure": "",
+    "beats": [
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "谢谢你来。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "我一直在考虑这件事。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "你想留下还是先回去？",
+        "choices": 0
+      },
+      {
+        "Type": "choice",
+        "Actor": "Alex",
+        "Text": "",
+        "choices": 2
+      },
+      {
+        "Type": "end",
+        "Actor": "",
+        "Text": "",
+        "choices": 0
+      }
+    ],
+    "summary": "玩家向Alex承认自己弄坏了纪念品，然后决定留下解释。"
+  },
+  {
+    "name": "unknown_choice_actor",
+    "accepted": true,
+    "failure": "",
+    "beats": [
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "谢谢你来。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "我一直在考虑这件事。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "你想留下还是先回去？",
+        "choices": 0
+      },
+      {
+        "Type": "choice",
+        "Actor": "Alex",
+        "Text": "",
+        "choices": 2
+      },
+      {
+        "Type": "end",
+        "Actor": "",
+        "Text": "",
+        "choices": 0
+      }
+    ],
+    "summary": "Alex邀玩家在海边聊天。"
+  },
+  {
+    "name": "missing_choice_id",
+    "accepted": false,
+    "failure": "选择节点必须包含 2 到 3 个选项。",
+    "beats": null,
+    "summary": null
+  },
+  {
+    "name": "four_choices_silently_truncated",
+    "accepted": true,
+    "failure": "",
+    "beats": [
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "谢谢你来。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "我一直在考虑这件事。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "你想留下还是先回去？",
+        "choices": 0
+      },
+      {
+        "Type": "choice",
+        "Actor": "Alex",
+        "Text": "",
+        "choices": 3
+      },
+      {
+        "Type": "end",
+        "Actor": "",
+        "Text": "",
+        "choices": 0
+      }
+    ],
+    "summary": "Alex邀玩家在海边聊天。"
+  },
+  {
+    "name": "neutral_common_movement_after_choice",
+    "accepted": false,
+    "failure": "选择后只能保留少量动作、退场或结束节点。",
+    "beats": null,
+    "summary": null
+  },
+  {
+    "name": "romance_at_two_hearts",
+    "accepted": true,
+    "failure": "",
+    "beats": [
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "亲爱的，从今天起我们就是夫妻了。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "我一直在考虑这件事。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "你想留下还是先回去？",
+        "choices": 0
+      },
+      {
+        "Type": "choice",
+        "Actor": "Alex",
+        "Text": "",
+        "choices": 2
+      },
+      {
+        "Type": "end",
+        "Actor": "",
+        "Text": "",
+        "choices": 0
+      }
+    ],
+    "summary": "Alex邀玩家在海边聊天。"
+  },
+  {
+    "name": "closed_commitment_detected_as_open",
+    "open": true
+  },
+  {
+    "name": "topic_refusal_reopens_recall",
+    "recall": "[Y1 spring 2] 玩家答应和Alex明天去矿洞。"
+  },
+  {
+    "name": "preference_correction",
+    "memory": "[Y1 spring 1] 玩家喜欢咖啡。\n[Y1 spring 2] 玩家不喜欢咖啡。"
+  },
+  {
+    "name": "distinct_story_outcomes_coalesced",
+    "memory": "[Y1 spring 8] 每周剧情“在暴风雨过后一起修复海边那张旧长椅的下午”已经完成；玩家选择离开。"
+  },
+  {
+    "name": "narrative_key_choice_lost",
+    "facts": "- Alex：后续的普通台词1\n- Alex：后续的普通台词2\n- Alex：后续的普通台词3\n- Alex：后续的普通台词4\n- Alex：后续的普通台词5\n- Alex：后续的普通台词6"
+  },
+  {
+    "name": "world_facts_capacity_loss",
+    "facts": "- 当地天气：下雨；今天是否节日：否；当前是否正在节日活动：否\n- 当前任务：任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任\n- 医院状态：住院至第30天（还剩2天）；移动和下矿护卫工具当前不可用。\n- 近期战斗经历：在矿井被击败2次；上次事件日期：第1年春季20日\n- 玩家：测试玩家；农场：测试农场；农场类型：标准农场\n- 技能：耕种5，采矿5，觅食5，钓鱼5，战斗5。"
+  }
+]

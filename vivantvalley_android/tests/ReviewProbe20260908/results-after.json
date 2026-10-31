@@ -1,0 +1,187 @@
+[
+  {
+    "name": "baseline",
+    "accepted": true,
+    "failure": "",
+    "beats": [
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "谢谢你来。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "我一直在考虑这件事。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "你想留下还是先回去？",
+        "choices": 0
+      },
+      {
+        "Type": "choice",
+        "Actor": "Alex",
+        "Text": "",
+        "choices": 2
+      },
+      {
+        "Type": "end",
+        "Actor": "",
+        "Text": "",
+        "choices": 0
+      }
+    ],
+    "summary": "Alex邀玩家在海边聊天。"
+  },
+  {
+    "name": "end_before_any_dialogue",
+    "accepted": false,
+    "failure": "end只能位于唯一choice之后的最后一个节点，不能提前结束或隐藏后续内容。",
+    "beats": null,
+    "summary": null
+  },
+  {
+    "name": "player_key_disclosure_silently_dropped",
+    "accepted": false,
+    "failure": "玩家不能作为NPC演员；含正文的玩家节点不能删除或转交NPC，请改成玩家choice。",
+    "beats": null,
+    "summary": null
+  },
+  {
+    "name": "unknown_choice_actor",
+    "accepted": false,
+    "failure": "剧情选择引用了无效演员：Wizard。",
+    "beats": null,
+    "summary": null
+  },
+  {
+    "name": "missing_choice_id",
+    "accepted": true,
+    "failure": "",
+    "beats": [
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "谢谢你来。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "我一直在考虑这件事。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "你想留下还是先回去？",
+        "choices": 0
+      },
+      {
+        "Type": "choice",
+        "Actor": "Alex",
+        "Text": "",
+        "choices": 2
+      },
+      {
+        "Type": "end",
+        "Actor": "",
+        "Text": "",
+        "choices": 0
+      }
+    ],
+    "summary": "Alex邀玩家在海边聊天。"
+  },
+  {
+    "name": "four_choices_silently_truncated",
+    "accepted": false,
+    "failure": "选择节点必须包含2至3个选项，不能静默删除额外选项。",
+    "beats": null,
+    "summary": null
+  },
+  {
+    "name": "neutral_common_movement_after_choice",
+    "accepted": true,
+    "failure": "",
+    "beats": [
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "谢谢你来。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "我一直在考虑这件事。",
+        "choices": 0
+      },
+      {
+        "Type": "dialogue",
+        "Actor": "Alex",
+        "Text": "你想留下还是先回去？",
+        "choices": 0
+      },
+      {
+        "Type": "choice",
+        "Actor": "Alex",
+        "Text": "",
+        "choices": 2
+      },
+      {
+        "Type": "face",
+        "Actor": "Alex",
+        "Text": "",
+        "choices": 0
+      },
+      {
+        "Type": "end",
+        "Actor": "",
+        "Text": "",
+        "choices": 0
+      }
+    ],
+    "summary": "Alex邀玩家在海边聊天。"
+  },
+  {
+    "name": "romance_at_two_hearts",
+    "accepted": false,
+    "failure": "romantic结果需要至少8心或配偶关系；当前关系请使用warm、playful、honest、shared、neutral或distant。",
+    "beats": null,
+    "summary": null
+  },
+  {
+    "name": "closed_commitment_detected_as_open",
+    "open": false
+  },
+  {
+    "name": "topic_refusal_reopens_recall",
+    "recall": ""
+  },
+  {
+    "name": "preference_correction",
+    "memory": "[Y1 spring 2] 玩家不喜欢咖啡。"
+  },
+  {
+    "name": "distinct_story_outcomes_coalesced",
+    "memory": "[Y1 spring 1] 每周剧情“在暴风雨过后一起修复海边那张旧长椅的下午”已经完成；玩家选择留下。\n[Y1 spring 8] 每周剧情“在暴风雨过后一起修复海边那张旧长椅的下午”已经完成；玩家选择离开。"
+  },
+  {
+    "name": "narrative_key_choice_lost",
+    "facts": "[剧情：事件47；春1；Beach；已完成]\n- 玩家选择：我拒绝这次约会。\n- Alex：后续的普通台词5\n- Alex：后续的普通台词6"
+  },
+  {
+    "name": "world_facts_capacity_loss",
+    "facts": "天气/节日：下雨；今天是否节日：否；当前是否正在节日活动：否\n任务：任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任任…\n医院：住院至第30天（还剩2天）；移动和下矿护卫工具当前不可用。\n战斗：在矿井被击败2次；上次事件日期：第1年春季20日\n玩家：测试玩家；农场：测试农场；农场类型：标准农场\n技能：耕种5，采矿5，觅食5，钓鱼5，战斗5。\n配偶/室友：Emily\n进度：社区中心是\n能力：骷髅钥匙=有\n姜岛船：是"
+  },
+  {
+    "name": "regression_verification",
+    "passed": true,
+    "assertions": 54,
+    "providerCalls": 0
+  }
+]

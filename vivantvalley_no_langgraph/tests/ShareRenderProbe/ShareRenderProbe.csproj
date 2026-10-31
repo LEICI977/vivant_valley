@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable><GamePath>E:\SteamLibrary\steamapps\common\Stardew Valley</GamePath></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="VivantValley" HintPath="..\..\bin\Release\net6.0\VivantValley.dll" />
+    <Reference Include="Stardew Valley" HintPath="$(GamePath)\Stardew Valley.dll" />
+    <Reference Include="StardewModdingAPI" HintPath="$(GamePath)\StardewModdingAPI.dll" />
+    <Reference Include="MonoGame.Framework" HintPath="$(GamePath)\MonoGame.Framework.dll" />
+    <Reference Include="SkiaSharp" HintPath="$(GamePath)\SkiaSharp.dll" />
+    <None Include="$(GamePath)\libSkiaSharp.dll" Link="libSkiaSharp.dll" CopyToOutputDirectory="PreserveNewest" />
+    <Reference Include="xTile" HintPath="$(GamePath)\xTile.dll" />
+    <Reference Include="StardewValley.GameData" HintPath="$(GamePath)\StardewValley.GameData.dll" />
+    <None Include="$(GamePath)\SDL2.dll" Link="SDL2.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="$(GamePath)\soft_oal.dll" Link="soft_oal.dll" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

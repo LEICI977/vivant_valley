@@ -1,0 +1,256 @@
+{
+  "Contacts": {
+    "Abigail": [
+      "Pierre",
+      "Caroline",
+      "Sam",
+      "Sebastian",
+      "Emily"
+    ],
+    "Alex": [
+      "George",
+      "Evelyn",
+      "Haley",
+      "Sam",
+      "Penny"
+    ],
+    "Caroline": [
+      "Pierre",
+      "Abigail",
+      "Jodi",
+      "Robin",
+      "Emily"
+    ],
+    "Clint": [
+      "Emily",
+      "Gus",
+      "Willy",
+      "Lewis",
+      "Marlon"
+    ],
+    "Demetrius": [
+      "Robin",
+      "Maru",
+      "Sebastian",
+      "Harvey",
+      "Linus"
+    ],
+    "Dwarf": [
+      "Krobus",
+      "Wizard",
+      "Marlon",
+      "Clint",
+      "Linus"
+    ],
+    "Elliott": [
+      "Leah",
+      "Willy",
+      "Gus",
+      "Emily",
+      "Harvey"
+    ],
+    "Emily": [
+      "Haley",
+      "Sandy",
+      "Clint",
+      "Gus",
+      "Leah"
+    ],
+    "Evelyn": [
+      "George",
+      "Alex",
+      "Caroline",
+      "Jodi",
+      "Lewis"
+    ],
+    "George": [
+      "Evelyn",
+      "Alex",
+      "Lewis",
+      "Gus",
+      "Kent"
+    ],
+    "Gus": [
+      "Emily",
+      "Pam",
+      "Willy",
+      "Clint",
+      "Lewis"
+    ],
+    "Haley": [
+      "Emily",
+      "Alex",
+      "Penny",
+      "Sam",
+      "Leah"
+    ],
+    "Harvey": [
+      "Maru",
+      "Demetrius",
+      "Gus",
+      "Elliott",
+      "Lewis"
+    ],
+    "Jas": [
+      "Marnie",
+      "Shane",
+      "Vincent",
+      "Penny",
+      "Jodi"
+    ],
+    "Jodi": [
+      "Kent",
+      "Sam",
+      "Vincent",
+      "Caroline",
+      "Robin"
+    ],
+    "Kent": [
+      "Jodi",
+      "Sam",
+      "Vincent",
+      "George",
+      "Gus"
+    ],
+    "Krobus": [
+      "Dwarf",
+      "Wizard",
+      "Linus",
+      "Marlon",
+      "Willy"
+    ],
+    "Leah": [
+      "Elliott",
+      "Robin",
+      "Marnie",
+      "Emily",
+      "Gus"
+    ],
+    "Leo": [
+      "Linus",
+      "Willy",
+      "Jas",
+      "Vincent",
+      "Penny"
+    ],
+    "Lewis": [
+      "Marnie",
+      "Pierre",
+      "Robin",
+      "Gus",
+      "Evelyn"
+    ],
+    "Linus": [
+      "Leo",
+      "Robin",
+      "Wizard",
+      "Willy",
+      "Demetrius"
+    ],
+    "Marnie": [
+      "Lewis",
+      "Shane",
+      "Jas",
+      "Robin",
+      "Leah"
+    ],
+    "Maru": [
+      "Robin",
+      "Demetrius",
+      "Sebastian",
+      "Harvey",
+      "Penny"
+    ],
+    "Pam": [
+      "Penny",
+      "Gus",
+      "Emily",
+      "Jodi",
+      "Willy"
+    ],
+    "Penny": [
+      "Pam",
+      "Maru",
+      "Jas",
+      "Vincent",
+      "Jodi"
+    ],
+    "Pierre": [
+      "Caroline",
+      "Abigail",
+      "Lewis",
+      "Gus",
+      "Robin"
+    ],
+    "Robin": [
+      "Demetrius",
+      "Maru",
+      "Sebastian",
+      "Caroline",
+      "Leah"
+    ],
+    "Sam": [
+      "Sebastian",
+      "Abigail",
+      "Jodi",
+      "Kent",
+      "Vincent"
+    ],
+    "Sandy": [
+      "Emily",
+      "Haley",
+      "Gus",
+      "Willy",
+      "Wizard"
+    ],
+    "Sebastian": [
+      "Sam",
+      "Abigail",
+      "Robin",
+      "Maru",
+      "Demetrius"
+    ],
+    "Shane": [
+      "Marnie",
+      "Jas",
+      "Gus",
+      "Emily",
+      "Sam"
+    ],
+    "Vincent": [
+      "Jodi",
+      "Kent",
+      "Sam",
+      "Jas",
+      "Penny"
+    ],
+    "Willy": [
+      "Elliott",
+      "Leo",
+      "Gus",
+      "Clint",
+      "Linus"
+    ],
+    "Wizard": [
+      "Linus",
+      "Dwarf",
+      "Krobus",
+      "Caroline",
+      "Marlon"
+    ],
+    "Marlon": [
+      "Gil",
+      "Clint",
+      "Willy",
+      "Wizard",
+      "Lewis"
+    ],
+    "Gil": [
+      "Marlon",
+      "Clint",
+      "George",
+      "Willy",
+      "Gus"
+    ]
+  }
+}

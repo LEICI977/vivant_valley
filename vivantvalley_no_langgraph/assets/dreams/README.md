@@ -1,0 +1,1 @@
+Dream collage stickers are a curated subset of the existing desktop sharing catalogue, selected across 20 categories. Paths reference the original share images without altering them. Android ships this subset only. See assets/share/stickers-LICENSE for the original bundled license. No new images were generated.

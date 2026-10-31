@@ -1,0 +1,35 @@
+# Local credentials and runtime state
+.env
+.env.*
+!.env.example
+!.env.*.example
+config.json
+/vivantvalley_backend/
+shares/
+*.log
+
+# Dependencies and generated outputs
+node_modules/
+bin/
+obj/
+dist/
+coverage/
+.vs/
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.user
+
+# Historical archives and local backups
+*.zip
+backups/
+downloads/
+.DS_Store
+
+# Local reviews, conversation captures and operational records
+reviews/
+/debug_ai_request/
+/主动剧情规划和总结相关/
+/梦境对话记录/
+DEPLOYMENT_*.md

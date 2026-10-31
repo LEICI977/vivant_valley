@@ -1,0 +1,16 @@
+【可执行格式V2：只输出一个完整、紧凑JSON对象】
+顶层字段：formatVersion固定2、title、summary（一句话）、inviter、participants（1至3名候选NPC内部名）、locationId、timeSlot、mailBody、beats。
+【创作建议，不是拒收条件】
+建议两次choice、每次两个选项，目标10至18个beats。台词简洁，选项有实际不同的回应，最后一次选择的responseText直接收束。台词数量、面向谁、选择间隔及是否使用when由剧情决定。不要求凑齐三类结局。
+【实际执行格式】
+完整剧情硬上限48个beats。至少一个choice，每个choice至少两个完整选项；超过三个选项将分页完整展示，不删除内容。单节点技术容量48项，不要以此为生成目标。紧凑输出，不缩进，省略空字段、默认durationMs、空choices和memoryText。
+动作type只允许enter、move、face、animation、emote、dialogue、pause、camera、sound、choice、exit、end。actor只能为参与NPC内部名，不能是player。target只能是player、player_left、player_right、center、left、right、空字符串或参与NPC内部名；地图ID仅放顶层locationId。camera指向player或参与NPC。
+animation/emote的cue只允许空、wave、sit、look_away、cheer、shy、surprised、sad、happy、love；sound的cue只允许空、soft、surprise、mystery、storm、footstep。
+choice必须无条件且id唯一，如c1、c2。每个option含id（节点内唯一小写字符串）、玩家text、responseActor、专属responseText、outcome。
+普通节点和option可选when对象，如{"c1":"stay"}；多个键是AND，省略或{}为无条件。只能引用已经出现的choice及真实存在的option id。选择节点本身不能带when，禁止循环、前向引用、next/goto/flags。每条可达路线在选择处至少两个可用选项，不能设计死路。
+option.outcome只允许romantic、warm、playful、honest、shared、neutral、distant。option.intimacy默认none，可用affection、kiss、private，只描述所选剧情，不对应心数资格校验。boundary默认false，仅记录叙事含义，不隐式改变后续选项。创作时尊重人物背景和玩家实际选择。
+最后choice的每个option填写ending，从closer、unresolved、apart选取；可重复，不必三类齐全。此前option不填ending。唯一end必须为最后一个无条件节点。关系升降由本地完成时一次结算，不输出奖励数值。
+以下是11个节点的完整示例。实际生成替换为候选人物、地点和全新剧情，不为凑长度扩写：
+{"formatVersion":2,"title":"撞上的邀约","summary":"两份邀约撞在一起，玩家必须表态。","inviter":"Alex","participants":["Alex","Sam"],"locationId":"Beach","timeSlot":"evening","mailBody":"傍晚到海边来。有件事我想当面问你。","beats":[{"type":"enter","actor":"Alex","target":"player_left"},{"type":"enter","actor":"Sam","target":"player_right"},{"type":"dialogue","actor":"Alex","target":"player","text":"我以为今晚只有我们两个。"},{"type":"dialogue","actor":"Sam","target":"player","text":"等等，你也约了他？"},{"type":"dialogue","actor":"Alex","target":"player","text":"别让我们互相猜了，你怎么说？"},{"type":"choice","id":"c1","actor":"Alex","text":"你先如何回应？","choices":[{"id":"explain","text":"我先解释清楚。","responseActor":"Alex","responseText":"好，我听着。","outcome":"honest"},{"id":"distance","text":"我不想接受这种追问。","responseActor":"Alex","responseText":"好，我退后，你不用勉强。","outcome":"distant","boundary":true}]},{"type":"dialogue","actor":"Alex","target":"player","when":{"c1":"explain"},"text":"我介意的，是你让我以为这次很特别。"},{"type":"dialogue","actor":"Alex","target":"player","when":{"c1":"distance"},"text":"我会收回刚才的态度，不再逼你。"},{"type":"dialogue","actor":"Sam","target":"player","text":"今晚怎么办，你来决定。"},{"type":"choice","id":"c2","actor":"Sam","text":"你最后决定？","choices":[{"id":"talk","text":"我留下，但今天只把话说清楚。","responseActor":"Sam","responseText":"那就坐下说，谁也别替谁做决定。","outcome":"honest","ending":"unresolved"},{"id":"leave","text":"我先离开，各自冷静一下。","responseActor":"Sam","responseText":"好，我不拦你。今晚到这里。","outcome":"distant","ending":"apart","boundary":true}]},{"type":"end"}]}
+
+activityKind：story（默认普通活动）或 date（明确的约会）。仅在邀请和实际剧情明确为与邀请人的约会时使用 date；普通同行、见面、好感高或某个浪漫选择不等于约会。此字段不是完成记录，只有游戏实际完成后才形成可传播事件。
